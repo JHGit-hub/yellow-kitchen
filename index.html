@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Yellow Kitchen</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <header> <!-- menu haut de page -->
+            <section class="header">
+                <div class="container"></div>
+                    <div class="row"> <!-- séparé le header en 3 parties pour le logo à gauche et les icones à droites -->
+                        <div class="column-1">
+                            <img src="assets/images/logo-yellow-kitchen.png" alt="Logo du Site">
+                        </div>
+                        <div class="column-2 ">
+                        </div>
+                        <div class="column-3">
+                            <nav> <!-- pages non créer -->
+                                <ul>
+                                    <li><a href="pages/login.html" title="Log In" target="_blank"><img src="assets/icons/log-in.png"></a></li>
+                                    <li><a href="pages/panier.html" title="Panier"target="_blank"><img src="assets/icons/cart.png"></a></li>
+                                    <li><a href="menu" title="Menu" target="_blank"><img src="assets/icons/menu.png"></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="banner"> <!-- une grande section qui contiens le main, avec la classe banner pour avoir la même taille partout -->
+                <div class="container">
+                    <div class="container-banner">
+                        <div class="column-1">
+                            <div class="block"> <!-- j'avais commencer par faire un espace vide (block-2 , supprimer depuis) sous la div block pour placer correctement block, mais j'ai reussi sans -->
+                                <h1>Your Food court at home</h1>
+                                <div class="Call-to-action">
+                                    <div class="bouton-1"> <!-- image cliquable ouvrant vers une nouvelle page dans un  nouvel onglet-->
+                                        <a href="pages.delivery.html" alt="delivery" target="_blank"><h3>Delivery</h3><p>Order In</p></a> 
+                                    </div>
+                                    <div class="bouton-2">
+                                        <a href="pages.delivery.html" alt="delivery" target="_blank"><h3>Take out</h3><p>Grab and go</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-2">
+                            <img src="assets/images/plate-main.png " alt="Plat Enseigne"> 
+                        </div>
+                    </div>
+                    <div class="container-presentation">
+                        <h2>Restaurants</h2>
+                        <div class="row">
+                            <div class="item"> <!-- mes cards se chevauchaient en reduisant, j'ai trouver la solution sur internet -->
+                                <div class="card">
+                                    <img src="assets/images/plate-burger.png" alt="plat du Burger D'Lice">
+                                    <img src="assets/images/logo-burger.png" alt="Logo du Restaurant Burger D'Lice">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="assets/images/plate-il-pastificio.png" alt="plat du Il Pastificio">
+                                    <img src="assets/images/logo-il-pastificio.png" alt="Logo du Restaurant Il Pastificio">  
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="assets/images/plate-believe.png" alt="plat du Believe">
+                                    <img src="assets/images/logo-believe.png" alt="Logo du Restaurant Believe">   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="assets/images/plate-bo.png" alt="plat du Bo">
+                                    <img src="assets/images/logo-bo.png" alt="Logo du Restaurant Bo">    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

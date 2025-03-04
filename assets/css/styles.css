@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+        /** font Family **/
+
+@font-face {
+    font-family: "poppins";
+    src: url(fonts/poppins-light.ttf);     /** j'avais pris poppins-medium au départ mais trop "grasse" **/
+}
+@font-face {
+    font-family: "martel";
+    src: url(fonts/martelsans-regular.ttf);
+}
+
+h1{
+    font-family: "poppins", sans-serif;
+    font-size: 3.625rem;
+    font-weight: 300;
+    line-height: 4rem;
+    color:#3f4255;
+}
+
+h2{
+    font-family: "poppins",sans-serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 4rem;
+    color:#3f4255;
+}
+
+h3{
+    font-family: "martel",sans-serif;
+    font-size: 1rem;
+    font-weight:700;
+    line-height: 1.25rem;
+    color:#3f4255;
+}
+p{
+    font-family: "martel",sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color:#3f4255;
+}
+
+a{
+    text-decoration: none;
+}
+
+/** Structure **/
+
+
+.container{
+    width:87%;
+    margin:auto;
+}
+
+
+
+.column-1, .column-2, .column-3{ /** utilisation de fit-content pour obliger la div à adopter la taille de son contenu, classe column supprimée du html **/
+    width:fit-content;
+    display:inline-block;
+}
+
+.column-2{
+    width:65%;
+}
+
+.column-3 li{           /** selectionne tous les li de la nav **/
+    display: inline-block;
+    margin:auto;
+}
+
+ul{
+   width:fit-content; 
+}
+
+li{
+    padding:1rem;
+}
+
+        /** Main **/
+
+     /** Banner **/
+
+.container-banner .column-1, .container-banner .column-2{
+    display:inline-block;
+    width:47%;
+    vertical-align: top;                /** trouver sur internet pour aligner en haut le texte, class block-2 supprimer (cf schema) **/
+}
+
+.container-banner .column-2 img{
+    width:100%;
+}
+
+.bouton-1 ,.bouton-2{
+    display:inline-block;
+    margin:5.5rem 1.5rem 0 0;
+    border:solid 2px;
+    border-radius: 4px;
+    padding:16px 24px 16px 24px;
+    color:#ffe145;
+}
+
+.container-banner{
+    margin-top: 1.5rem;
+}
+
+.column-1 .block{
+    margin-top:6rem;
+}
+    /** presentation **/
+
+.container-presentation{
+    margin-top:12.8rem;
+    width:100%;
+    text-align: center;
+}
+
+.container-presentation h2{  /** car container-presentation est en text-align:center; **/
+    text-align: left;
+}
+
+.card img{
+    width:100%;
+    height:auto;
+}
+
+.item{
+    width:22%;
+    display:inline-block;
+    margin:0 1%;
+    vertical-align: top;
+}
+
+.item:first-child{   /** j'ai voulu que la premiére et la derniére card soient sans marge, mais cela ne fonctionne pas, plus le temps pour résoudre, time out **/
+    margin-left: 0;
+}
+
+.item:last-child{
+    margin-right: 0;
+}
+
